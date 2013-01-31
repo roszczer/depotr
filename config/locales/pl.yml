@@ -1,0 +1,95 @@
+#START:layout
+#START:main
+#START:cart
+#START:currency
+#START:checkout
+#START:errors
+#START:model
+#START:flash
+pl:
+
+#END:cart
+#END:flash
+#END:model
+#END:errors
+#END:checkout
+#END:main
+#END:layout
+  number:
+    currency:
+      format:
+        unit:      "USD"
+        precision: 2
+        separator: ","
+        delimiter: ""
+        format:    "%n%u"
+#END:currency
+
+#START:model
+#START:errors
+  activerecord:
+#END:errors
+    models:
+      order:       "zamówienia"
+    attributes:
+      order:
+        address:   "Adres"
+        name:      "Nazwisko"
+        email:     "E-mail"
+        pay_type:  "Forma płatności"
+#END:model
+#START:errors
+    errors:
+      messages:
+        inclusion: "- nie znajduje się na liście"
+        blank:     "- nie może być puste"
+  errors:
+    template:
+      body:        "Wystąpiły problemy w następujących polach:"
+      header:
+        one:       "1 błąd uniemożliwił zatwierdzenie tego %{model}"
+        other:     "%{count} błędy uniemożliwiły zatwierdzenie tego %{model}"
+#END:errors
+
+#START:layout
+  layouts:
+    application:
+      title:       "Pragmatyczna Księgarnia"
+      home:        "Strona Domowa"
+      questions:   "Pytania"
+      news:        "Nowości"
+      contact:     "Kontact"
+#END:layout
+
+#START:cart
+  carts:
+    cart:
+      title:          "Twój Koszyk"
+      empty:          "Opróżnij koszyk"
+#        potwierdzenie:  "Czy na pewno?"
+      checkout:       "Do kasy"      
+#END:cart
+
+#START:main
+  store:
+    index:
+      title_html:  "Twój Pragmatyczny Katalog"
+      add_html:    "Dodaj do Koszyka"
+#END:main
+
+#START:checkout
+  orders:
+    new:
+      legend:       "Proszę wpisać swoje dane"
+    form:
+      name:         "Nazwisko"
+      address_html: "Adres"
+      email:        "E-mail"
+      pay_type:     "Forma płatności"
+      pay_prompt_html: "Wybierz formę płatności"
+      submit:       "Złóż zamówienie"
+#END:checkout
+
+#START:flash
+  thanks:          "Dziękujemy za złożenie zamówienie"
+#END:flash

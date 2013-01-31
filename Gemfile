@@ -7,6 +7,13 @@ gem 'rails', '3.2.9'
 
 gem 'sqlite3'
 
+group :production do
+  gem 'mysql2'
+end
+
+gem 'activerecord-mysql-adapter'
+
+# gem 'rails-i18n'
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -21,6 +28,20 @@ group :assets do
 end
 
 gem 'jquery-rails'
+
+gem 'bcrypt-ruby', '~> 3.0.0'
+
+group :test do
+	gem 'turn', :require => false
+end
+
+gem 'passenger'
+
+#gem 'passenger-install-apache2-module'
+
+gem 'capistrano'
+
+gem 'will_paginate', '~> 3.0'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
