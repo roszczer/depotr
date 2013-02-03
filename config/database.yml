@@ -26,4 +26,4 @@ production:
   pool: 5
   username: rs
   password: secret
-  host: localhost      #/var/run/mysqld/mysqld.sock
+  host: depotr.localhost.com      #/var/run/mysqld/mysqld.sock
