@@ -39,7 +39,7 @@ gem 'passenger'
 
 #gem 'passenger-install-apache2-module'
 
-gem 'capistrano'
+gem 'capistrano-rbenv'
 
 gem 'will_paginate', '~> 3.0'
 
