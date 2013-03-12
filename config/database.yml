@@ -24,6 +24,6 @@ production:
   reconnect: false
   database: depotr_production
   pool: 5
-  username: depotr
+  username: rs
   password: depotr
-  host: depotr.com      #/var/run/mysqld/mysqld.sock
+  host: localhost      #/var/run/mysqld/mysqld.sock

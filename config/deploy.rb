@@ -7,10 +7,10 @@
 # Visit http://www.pragmaticprogrammer.com/titles/rails4 for more book information.
 #---
 # be sure to change these
-require "bundler/capistrano"
+#require "capistrano-rbev"
 
 set :user, 'rs'
-set :domain, 'depotr.localhost.com'
+set :domain, 'depotr.com'
 set :application, 'depotr'
 
 # adjust if you are using RVM, remove if you are not
